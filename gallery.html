@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Gallery</title>
+
+  <!-- Link Style  -->
+  <!-- <link rel="stylesheet" href="../CSS/gallery.css" /> -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+    * {
+      padding: 0;
+      margin: 0;
+      background-color: black;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .wrapper h1 {
+      margin: 20px auto;
+      text-align: center;
+      font-size: 40px;
+      color: white;
+      /* color: #333333; */
+    }
+
+    .card {
+      width: 32%;
+      overflow: hidden;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      transition: 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1:hover {
+      color: gray;
+    }
+
+    .card img {
+      height: 100%;
+      width: 100%;
+      filter: grayscale(100%);
+      object-fit: cover;
+      transition: 1s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      filter: drop-shadow(0 0 10px #333);
+    }
+
+    .card:hover img {
+      filter: grayscale(0);
+      border-radius: 20px;
+    }
+
+    .card figcaption {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 40%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+      color: #fff;
+      padding: 25px;
+      opacity: 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .card:hover figcaption {
+      opacity: 1;
+      bottom: 10%;
+      transform: translateY(-50%) rotate(0deg);
+      transition: 1s;
+    }
+  </style>
+
+  <!-- Add Favicon  -->
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Pet Gallery</h1>
+    <div class="container">
+      <figure class="card">
+        <img src="IMAGES/image1.jpg" />
+        <figcaption>Image 1</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image2.jpg" />
+        <figcaption>Image 2</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image3.jpg" />
+        <figcaption>Image 3</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image4.jpg" />
+        <figcaption>Image 4</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image5.jpg" />
+        <figcaption>Image 5</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image6.jpg" />
+        <figcaption>Image 6</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image7.jpg" />
+        <figcaption>Image 7</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image8.jpg" />
+        <figcaption>Image 8</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image9.jpg" />
+        <figcaption>Image 9</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image 10.jpg" />
+        <figcaption>Image 10</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image11.jpg" />
+        <figcaption>Image 11</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image12.jpg" />
+        <figcaption>Image 12</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image13.jpg" />
+        <figcaption>Image 13</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image14.jpg" />
+        <figcaption>Image 14</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="IMAGES/image15.jpg" />
+        <figcaption>Image 15</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+
+</html>

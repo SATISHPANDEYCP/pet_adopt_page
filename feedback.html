@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        #walpi {
+            background-image: url("IMAGES/cat1.jpg");
+            background-size: cover;
+        }
+
+        #feedbackForm {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid gray;
+            border-radius: 20px;
+            box-shadow: 2px 2px 16px gray;
+            transition: 0.5s;
+        }
+
+        #feedbackForm:hover {
+            border: 5px solid gray;
+            box-shadow: 8px 8px 50px gray;
+            border-radius: 10px;
+        }
+
+        #feedbackForm h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #feedbackForm label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #feedbackForm input[type="text"],
+        #feedbackForm input[type="email"],
+        #feedbackForm textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        #feedbackForm textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        #feedbackForm select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        #feedbackForm button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #feedbackForm button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body id="walpi">
+    <div id="feedbackForm">
+        <h1>You Can Give Your Feedback Here.</h1>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Write Email" name="email">
+            </div>
+            <div>
+                <label for="feedback">Give your valuable Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Write your feedback here"></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+            </div>
+            <button type="submit">Send Feedback</button>
+        </form>
+    </div>
+</body>
+
+</html>
