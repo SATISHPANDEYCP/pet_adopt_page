@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #333; /* Fallback color if background image fails */
+        }
+
+        #walpi {
+            background-image: url("IMAGES/cat1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            backdrop-filter: blur(10px); /* Optional: Adds a blur effect */
+            color: #ff6347;
+        }
+
+        #feedbackForm {
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid gray;
+            border-radius: 15px;
+            box-shadow: 2px 2px 20px gray;
+            transition: 0.3s ease;
+        }
+
+        #feedbackForm:hover {
+            border-color: #ff6347;
+            box-shadow: 4px 4px 30px gray;
+            border-radius: 10px;
+        }
+
+        #feedbackForm h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6347; /* Slightly different color for header */
+        }
+
+        #feedbackForm label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        #feedbackForm input[type="text"],
+        #feedbackForm input[type="email"],
+        #feedbackForm textarea,
+        #feedbackForm select {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 16px;
+        }
+
+        #feedbackForm textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        #feedbackForm button {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        #feedbackForm button:hover {
+            background-color: #ff6347;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+
+        @media (max-width: 768px) {
+            #feedbackForm {
+                padding: 20px;
+            }
+
+            #feedbackForm h1 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #feedbackForm {
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            #feedbackForm h1 {
+                font-size: 20px;
+            }
+
+            #feedbackForm input[type="text"],
+            #feedbackForm input[type="email"],
+            #feedbackForm textarea,
+            #feedbackForm select {
+                font-size: 14px;
+            }
+
+            #feedbackForm button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body id="walpi">
+    <div id="feedbackForm">
+        <h1>We Value Your Feedback</h1>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Write your feedback here" required></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select a rating</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+            </div>
+            <button type="submit">Send Feedback</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -5,108 +5,219 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Project</title>
+  <title> Furever Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-
-  <!-- Font style from Google -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <!-- CSS linking -->
+  <!-- style -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="./Component/IMAGES/fav.png" type="image/x-icon">
+
 </head>
 
 <body>
-  <div class="main_box">
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <a href="#Home">
+        <h1><span class="nav-text"></span></h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="./Component/rules.html">Rules</a></li>
+          <li><a href="./Component/petadopt.html">Recommended Pet</a></li>
+          <li><a href="./Component/events.html">Events</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
 
+  <!-- Sidebar Menu -->
+  <div class="sidebar_menu" id="sidebar">
+    <div class="logo">
+      <a href="#" style="text-decoration: none; color: white;">Our Services</a>
+    </div>
 
+    <div class="menu">
+      <ul>
+        <li><i class="fa-solid fa-image"></i><a href="./Component/gallery.html">Gallery</a></li>
+        <li><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="./Component/rules.html">Rules</a></li>
+        <li><i class="fa-solid fa-photo-film"></i><a href="./Component/petadopt.html">Recommended Pet</a></li>
+        <li><i class="fa-solid fa-calendar-days"></i><a href="./Component/events.html">Events</a></li>
+        <li><i class="fa-solid fa-store"></i><a href="./Component/buy.html">Application</a></li>
+        <li><i class="fa-regular fa-comments"></i><a href="./Component/feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+
+    <div class="social_media">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main_box" id="Home">
+    <div class="overlay"></div>
     <div id="display">
       <div id="para">
-        <p>Welcome to Unkwon Pet Adoption!</p>
+        <h3>Welcome to <span style="color: white;">Furever Home</span>! <br>A Pet Adoption Page</h3>
       </div>
-
       <div id="pa">
-        <pre>   Why Adopt from Us?
-
-   Compassionate Care: Our shelter provides top-notch care for all our 
-   animals, ensuring they're healthy and ready to join your family.
-   Diverse Selection: From playful puppies to mature cats, we have
-    a variety of animals waiting to become part of your family.
-   Expert Guidance: Our team is dedicated to matching you with the
-    perfect pet based on your lifestyle and preferences.
-   Start Your Adoption Journey
-  
-  Explore our available pets and find your perfect match today!</pre>
-      </div>
-    </div>
-    <!-- This is bacially use for perform two operations for tick and untick. -->
-    <input type="checkbox" id="check" />
-    <div class="btn_one">
-      <label for="check">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </div>
-
-    <div class="sidebar_menu">
-      <div class="logo">
-        <a href="#">Our Services</a>
-      </div>
-
-      <div class="btn_two">
-        <label for="check" style="color: grey">
-          <i class="fa-solid fa-xmark"></i>
-        </label>
-      </div>
-
-      <div class="menu">
-        <ul>
-          <li>
-            <i class="fa-solid fa-image"></i>
-            <a href="gallery.html">Gallery</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            <a href="rules.html">Rules</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-photo-film"></i>
-            <a href="petadopt.html">Recomended Pet</a>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-calendar-days"></i>
-            <a href="events.html">Events</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-store"></i>
-            <a href="buy.html">Application</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-phone"></i>
-            <a href="contacts.html">Contact</a>
-          </li>
-          <li>
-            <i class="fa-regular fa-comments"></i>
-            <a href="feedback.html">Feedback</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="social_media">
-        <ul>
-          <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </ul>
+        <p>
+          <strong>Why Adopt from Us?</strong><br /><br />
+          <strong>Compassionate Care:</strong> Our shelter provides top-notch care for all our animals, ensuring they're
+          healthy and ready to join your family. Each pet receives regular veterinary check-ups, a balanced diet, and
+          plenty of love from our dedicated staff.<br /><br />
+          <strong>Diverse Selection:</strong> From playful puppies to mature cats, we have a variety of animals waiting
+          to become part of your family. Whether you're looking for a young, energetic companion or a calm, older pet,
+          our diverse selection ensures you'll find the perfect match. We continuously update our roster to include pets
+          of all ages, breeds, and sizes.<br /><br />
+          <strong>Expert Guidance:</strong> Our team is dedicated to matching you with the perfect pet based on your
+          lifestyle and preferences. We provide personalized recommendations and support throughout the adoption
+          process, ensuring that both you and your new pet are happy and well-suited for each other. Our staff is
+          trained to offer advice on pet care, training, and integration into your home.<br /><br />
+          <strong>Post-Adoption Support:</strong> We offer ongoing support after adoption, including training tips,
+          health advice, and access to our network of pet care professionals. We are committed to helping you build a
+          strong, loving relationship with your new pet, offering resources and guidance to ensure a smooth
+          transition.<br /><br />
+          <strong>Community Involvement:</strong> By adopting from us, you're also supporting our community outreach
+          programs. We partner with local organizations to promote responsible pet ownership and raise awareness about
+          animal welfare. Your adoption helps us continue our mission to make a difference in the lives of pets and
+          people alike.<br /><br />
+          <strong>Start Your Adoption Journey:</strong> Explore our available pets and find your perfect match today!
+          Whether you're browsing online or visiting us in person, our friendly staff is here to assist you every step
+          of the way. Join our family of adopters and make a lasting impact on a pet's life.
+        </p>
       </div>
     </div>
   </div>
 
+  <!-- Featured Pets Section -->
+  <div class="featured_pets">
+    <h2>Featured Pets</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="./Component/IMAGES/image7.jpg" alt="Pet 1">
+        <div class="card-content">
+          <h3>Fluffy</h3>
+          <p>A playful kitten who loves cuddles and toys.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Component/IMAGES/image6.jpg" alt="Pet 2">
+        <div class="card-content">
+          <h3>Bella</h3>
+          <p>An energetic dog ready for a loving home.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Component/IMAGES/image5.jpg" alt="Pet 3">
+        <div class="card-content">
+          <h3>Max</h3>
+          <p>A calm and friendly older cat who enjoys lounging.</p>
+        </div>
+      </div>
+    </div>
+    <a href="./Component/buy.html">
+      <div class="See-more-btn" style="margin-top: 20px;">Buy now</div>
+    </a>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="gallery" id="gallery">
+    <h2>Pet Gallery</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="./Component/IMAGES/image11.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="./Component/IMAGES/image13.jpg" alt="Gallery Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="./Component/IMAGES/image 10.jpg" alt="Gallery Image 3">
+      </div>
+    </div>
+    <a href="./Component/gallery.html">
+      <div class="See-more-btn">See more</div>
+    </a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_content">
+        <div class="contact_and_form">
+          <!-- Contact Us and Social Media Section -->
+          <div class="contact_and_social">
+            <p class="Unselected-text">FUREVER HOME</p>
+            <div class="contact_section">
+              <h3>Contact Us</h3>
+              <p>Email: <a href="mailto:contact@petadoption.com"
+                  style="color: #ff6347; text-decoration: none;">contact@petadoption.com</a></p>
+              <p>Phone: <a href="tel:+1234567890" style="color: #ff6347; text-decoration: none;">+123 456 7890</a></p>
+              <p>Address: 123 Whisker Wishes, near PC ip:14.139.214:50</p>
+            </div>
+            <div class="social_media_footer">
+              <ul>
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form Section -->
+          <div class="form_section">
+            <div class="form-heading">
+              <h2 style="text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);"><span style="color: #ff6347;">Get i</span>n
+                Touch</h2>
+            </div>
+            <div class="form-data">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Enter your massage" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="footer_note">© 2024 <span style="color: #ff6347;">SATISH PANDEY</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Move to Top Button -->
+  <button class="move-to-top" id="moveToTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
