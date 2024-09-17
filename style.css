@@ -422,7 +422,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 60%;
-padding-top: 2rem;
 }
 
 .sidebar_menu .social_media a {
