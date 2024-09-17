@@ -422,6 +422,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 60%;
+    margin-top: 20px;
 }
 
 .sidebar_menu .social_media a {
