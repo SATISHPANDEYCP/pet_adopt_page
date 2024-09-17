@@ -17,6 +17,9 @@
   <!-- favicon -->
   <link rel="icon" href="./Component/IMAGES/fav.png" type="image/x-icon">
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3232bbb943.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -28,6 +31,7 @@
       </a>
       <nav>
         <ul>
+          <li id="mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></li>
           <li><a href="#Home">Home</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="./Component/rules.html">Rules</a></li>
@@ -35,20 +39,24 @@
           <li><a href="./Component/events.html">Events</a></li>
         </ul>
       </nav>
-      <div class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
+      <div id="hamburger" class="hamburger">
+        <i class="fa-solid fa-bars"></i> <!-- Font Awesome icon for hamburger -->
       </div>
     </div>
   </header>
 
+
   <!-- Sidebar Menu -->
-  <div class="sidebar_menu" id="sidebar">
+  <div id="sidebar" class="sidebar_menu">
+
     <div class="logo">
       <a href="#" style="text-decoration: none; color: white;">Our Services</a>
     </div>
 
     <div class="menu">
       <ul>
+        <li id="mode-toggles"><i class="fa-solid fa-circle-half-stroke"></i></li>
+
         <li><i class="fa-solid fa-image"></i><a href="./Component/gallery.html">Gallery</a></li>
         <li><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="./Component/rules.html">Rules</a></li>
         <li><i class="fa-solid fa-photo-film"></i><a href="./Component/petadopt.html">Recommended Pet</a></li>
@@ -218,6 +226,9 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <script src="app.js"></script>
+
+
+
 </body>
 
 </html>
