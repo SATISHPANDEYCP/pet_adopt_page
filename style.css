@@ -422,7 +422,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 60%;
-    margin-top: 20px;
+padding-top: 2rem;
 }
 
 .sidebar_menu .social_media a {
